@@ -3,80 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Template</title>
+    <title>The Janak Cafe</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #f5f5f5; }
         h1, h2, h3, h4, h5, .font-serif { font-family: 'Playfair Display', serif; }
     </style>
 </head>
-<<body class="bg-[#0a0a0a] text-white font-sans overflow-x-hidden w-full antialiased pt-28 md:pt-24">
+<body class="bg-[#0a0a0a] text-white font-sans overflow-x-hidden w-full antialiased pt-28 md:pt-24">
 
-
-    <nav class="fixed w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-neutral-800 transition-all duration-300">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-neutral-800 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-serif text-[#D4AF37] tracking-widest uppercase" data-config="restaurantName">Logo</a>
-            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold text-neutral-300">
-                <a href="index.html" class="hover:text-[#D4AF37] transition-colors">Home</a>
-                <a href="menu.html" class="hover:text-[#D4AF37] transition-colors">Menu</a>
-                <a href="about.html" class="hover:text-[#D4AF37] transition-colors">About</a>
-                <a href="contact.html" class="hover:text-[#D4AF37] transition-colors">Contact</a>
+            <a href="index.html" class="text-2xl font-serif text-[#C69C53] tracking-widest uppercase" data-config="restaurantName">The Janak Cafe</a>
+            
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-[#C69C53] focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold text-neutral-300 items-center">
+                <a href="index.html" class="text-[#C69C53] transition-colors">Home</a>
+                <a href="menu.html" class="hover:text-[#C69C53] transition-colors">Menu</a>
+                <a href="about.html" class="hover:text-[#C69C53] transition-colors">About</a>
+                <a href="contact.html" class="hover:text-[#C69C53] transition-colors">Contact</a>
+                <a href="reservation.html" class="bg-[#C69C53] text-black px-6 py-2 rounded-sm font-semibold hover:bg-white transition-colors">Book Table</a>
             </div>
-            <a href="reservation.html" class="hidden md:block bg-[#D4AF37] text-black px-6 py-2 rounded-sm font-semibold hover:bg-white transition-colors">Book Table</a>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0a] border-b border-neutral-800 pb-4">
+            <div class="flex flex-col text-center space-y-4 pt-4 uppercase tracking-wider font-semibold text-neutral-300">
+                <a href="index.html" class="text-[#C69C53]">Home</a>
+                <a href="menu.html" class="hover:text-[#C69C53]">Menu</a>
+                <a href="about.html" class="hover:text-[#C69C53]">About</a>
+                <a href="contact.html" class="hover:text-[#C69C53]">Contact</a>
+                <a href="reservation.html" class="text-[#C69C53]">Book Table</a>
+            </div>
         </div>
     </nav>
 
-    <main>
-        <section class="relative h-screen flex items-center justify-center text-center px-4 bg-cover bg-center" data-img="hero">
-            <div class="absolute inset-0 bg-black/60"></div>
-            <div class="relative z-10 max-w-4xl mx-auto space-y-6">
-                <h1 class="text-5xl md:text-7xl font-serif text-white" data-config="restaurantName">Restaurant Name</h1>
-                <p class="text-xl md:text-2xl text-neutral-300 italic font-serif" data-config="tagline">Tagline goes here</p>
-                <div class="pt-8 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="menu.html" class="bg-transparent border border-[#D4AF37] text-[#D4AF37] px-8 py-3 uppercase tracking-widest hover:bg-[#D4AF37] hover:text-black transition-all">View Menu</a>
-                    <a href="reservation.html" class="bg-[#D4AF37] border border-[#D4AF37] text-black px-8 py-3 uppercase tracking-widest hover:bg-white hover:border-white transition-all">Reserve Now</a>
-                </div>
+    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" data-img="hero"></div>
+        <div class="relative z-20 text-center px-6 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 tracking-wide" data-config="restaurantName">The Janak Cafe</h1>
+            <p class="text-xl md:text-2xl text-neutral-300 mb-10 font-light" data-config="tagline"></p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="menu.html" class="border border-[#C69C53] text-[#C69C53] px-8 py-3 rounded-sm font-semibold tracking-wider hover:bg-[#C69C53] hover:text-black transition-all duration-300 uppercase">View Menu</a>
             </div>
-        </section>
-
-        <section class="py-24 max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-serif text-[#D4AF37] mb-4">Culinary Highlights</h2>
-                <p class="text-neutral-400">A glimpse into our chef's finest creations.</p>
-            </div>
-            <div id="featured-container" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
-            <div class="text-center mt-12">
-                <a href="menu.html" class="inline-block border-b border-[#D4AF37] text-[#D4AF37] pb-1 hover:text-white hover:border-white transition-colors">Explore Full Menu</a>
-            </div>
-        </section>
-    </main>
+        </div>
+    </header>
 
     <footer class="bg-neutral-950 py-16 border-t border-neutral-900 text-center md:text-left">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-                <h3 class="text-2xl font-serif text-[#D4AF37] mb-4" data-config="restaurantName">Logo</h3>
-                <p class="text-neutral-500 text-sm" data-config="tagline">Tagline</p>
-            </div>
-            <div>
-                <h4 class="text-white uppercase tracking-wider mb-4 font-semibold">Location</h4>
-                <p class="text-neutral-500 text-sm mb-2" data-config="address">Address</p>
-                <a href="contact.html" class="text-[#D4AF37] text-sm hover:underline">Get Directions</a>
-            </div>
-            <div>
-                <h4 class="text-white uppercase tracking-wider mb-4 font-semibold">Contact</h4>
-                <p class="text-neutral-500 text-sm mb-1">Phone: <a href="#" class="phone-link hover:text-white" data-config="phone">Phone</a></p>
-                <p class="text-neutral-500 text-sm">Email: <a href="#" class="email-link hover:text-white" data-config="email">Email</a></p>
-            </div>
+            <div><h3 class="text-xl font-serif text-[#C69C53] mb-4" data-config="restaurantName"></h3><p class="text-neutral-500 text-sm" data-config="tagline"></p></div>
+            <div><h4 class="text-white uppercase tracking-widest text-sm font-semibold mb-4">Location</h4><p class="text-neutral-400 text-sm leading-relaxed" data-config="address"></p></div>
+            <div><h4 class="text-white uppercase tracking-widest text-sm font-semibold mb-4">Contact</h4><p class="text-neutral-400 text-sm mb-2">Phone: <span data-config="phone"></span></p><p class="text-neutral-400 text-sm">Email: <span data-config="email"></span></p></div>
         </div>
     </footer>
-
-    <a href="#" target="_blank" class="wa-link fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-50 flex items-center justify-center">
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-    </a>
-
-    <script src="js/config.js"></script>
-    <script src="js/main.js"></script>
+    
+    <a href="#" class="wa-link fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg></a>
+    <script src="js/config.js"></script><script src="js/main.js"></script>
 </body>
 </html>
-
