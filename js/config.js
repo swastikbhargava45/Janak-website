@@ -10,7 +10,6 @@ const Config = {
     whatsapp: "917775866066",
     email: "thejanakcafe@gmail.com",
     address: "Kayji Palladium, Power House, c-22, circle, Gogol Housing Board, Madgaon, Davorlim, Goa 403601",
-    // REAL WORKING GOOGLE MAPS EMBED LINK:
     googleMapsEmbed: "https://www.google.com/maps?q=Kayji+Palladium,Gogol+Housing+Board,Madgaon,Goa&output=embed", 
 
     // --- HOURS ---
@@ -23,8 +22,18 @@ const Config = {
         chef: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1977&auto=format&fit=crop", 
         aboutInterior: "https://i.postimg.cc/ftnVwDn3/interior1.jpg", 
         
-        // I HAVE EMPTIED THIS SO THE UGLY ERROR BOXES DISAPPEAR.
-        menuScans: []
+        // Your 9 Physical Menu Scans
+        menuScans: [
+            "https://i.postimg.cc/yd3fWX3R/IMG-20260323-194253.jpg", 
+            "https://i.postimg.cc/MTfsXbf7/IMG-20260323-194348.jpg",
+            "https://i.postimg.cc/bJS6dHS0/IMG-20260323-194415.jpg", 
+            "https://i.postimg.cc/LXgyhBgf/IMG-20260323-194530.jpg",
+            "https://i.postimg.cc/vTR0ng55/IMG-20260323-194555.jpg", 
+            "https://i.postimg.cc/WzR5ZF0n/IMG-20260323-194638.jpg",
+            "https://i.postimg.cc/ZnkwNB6V/IMG-20260323-194712.jpg", 
+            "https://i.postimg.cc/qqf1Kh2D/IMG-20260323-194759.jpg",
+            "https://i.postimg.cc/4yCWc7pM/IMG-20260323-194824.jpg"
+        ]
     },
 
     // --- ABOUT PAGE CONTENT ---
@@ -33,28 +42,39 @@ const Config = {
         chefName: "Sonu Chef",
     },
 
-    // --- TEXT MENU WITH FIXED STABLE IMAGES ---
+    // --- TEXT MENU: ONLY THE 4 HIGH SELLERS ---
     menu: [
         {
-            category: "Breakfast Classics",
+            category: "Our High Sellers",
             items: [
-                { name: "Soft Idli", description: "Classic steamed rice cakes served with sambar and chutney.", price: "140", image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=1000", tag: "Best Seller" },
-                { name: "Medu Vada", description: "Crispy lentil doughnuts served with coconut chutney.", price: "130", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=1000", tag: "" },
-                { name: "Ghee Podi Idli", description: "Idli tossed in aromatic ghee and podi masala.", price: "140", image: "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=1000", tag: "Signature Dish" }
-            ]
-        },
-        {
-            category: "Signature Dosas",
-            items: [
-                { name: "Masala Dosa", description: "Potato-stuffed dosa with sambar & chutney.", price: "170", image: "https://images.unsplash.com/photo-1630383249896-424e482df921?q=80&w=1000", tag: "" },
-                { name: "Benne Cheese Podi Masala Dosa", description: "Premium butter dosa with cheese and spiced podi.", price: "220", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000", tag: "Chef's Special" }
-            ]
-        },
-        {
-            category: "Italian Wood-Fired",
-            items: [
-                { name: "Margherita Pizza", description: "Authentic Italian crust with San Marzano tomatoes, fresh mozzarella, and basil.", price: "450", image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=1000", tag: "Authentic" },
-                { name: "Creamy Alfredo Pasta", description: "Penne tossed in a rich parmesan cream sauce with garlic and herbs.", price: "380", image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1000", tag: "" }
+                { 
+                    name: "Signature Masala Dosa", 
+                    description: "Golden crispy crepe with a spicy red chutney layer and savory potato filling.", 
+                    price: "170", 
+                    image: "https://images.unsplash.com/photo-1630383249896-424e482df921?q=80&w=1000", 
+                    tag: "Best Seller" 
+                },
+                { 
+                    name: "Soft Steamed Idli", 
+                    description: "Classic fluffy rice cakes served steaming hot with fresh sambar and coconut chutney.", 
+                    price: "140", 
+                    image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=1000", 
+                    tag: "Must Try" 
+                },
+                { 
+                    name: "Wood-Fired Margherita Pizza", 
+                    description: "Authentic Italian crust with San Marzano tomatoes, fresh mozzarella, and basil.", 
+                    price: "450", 
+                    image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=1000", 
+                    tag: "Authentic" 
+                },
+                { 
+                    name: "Creamy Alfredo Pasta", 
+                    description: "Penne tossed in a rich parmesan cream sauce with garlic and fresh herbs.", 
+                    price: "380", 
+                    image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1000", 
+                    tag: "Chef's Special" 
+                }
             ]
         }
     ]
