@@ -1,29 +1,21 @@
 const Config = {
     // --- BRANDING ---
-    restaurantName: "The Janak Cafe
-",
-    tagline: "Authentic South Indian Flavours
-",
+    restaurantName: "The Janak Cafe",
+    tagline: "Authentic South Indian Flavours",
     currency: "₹",
-    themePrimary: "#C69C53
-", // Luxury Gold
+    themePrimary: "#C69C53",
     
     // --- CONTACT & LOCATION ---
-    phone: "+91 77758 66066
-",
-    whatsapp: "917775866066
-", // No +, no spaces for WhatsApp API
-    email: "janakcafe1@gmail.com
-",
-    address: "Kayji Palladium, Power House, c-22, circle, Gogol Housing Board, Madgaon, Davorlim, Goa 403601
-",
-    googleMapsEmbed: "https://maps.google.com/maps?q=Kayji+Palladium,+Gogol+Housing+Board,+Madgaon,+Goa&t=&z=15&ie=UTF8&iwloc=&output=embed
-",
-    
+    phone: "+91 77758 66066",
+    whatsapp: "917775866066",
+    email: "janakcafe1@gmail.com",
+    address: "Kayji Palladium, Power House, c-22, circle, Gogol Housing Board, Madgaon, Davorlim, Goa 403601",
+    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3849.522513463374!2d73.966374!3d15.266395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb15b6d5f7f3f%3A0x6b4b4b4b4b4b4b4b!2sKayji%20Palladium!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin",
+
     // --- HOURS ---
     hours: {
-        weekdays: "Mon - Fri: 12:00 PM - 11:00 PM",
-        weekends: "Sat - Sun: 11:00 AM - 12:00 AM"
+        weekdays: "Mon - Fri: 8:00 AM - 10:00 PM",
+        weekends: "Sat - Sun: 7:30 AM - 11:00 PM"
     },
 
     // --- IMAGES ---
