@@ -1,16 +1,24 @@
 const Config = {
     // --- BRANDING ---
-    restaurantName: "Aura Luxe",
-    tagline: "A Symphony of Culinary Elegance",
+    restaurantName: "The Janak Cafe
+",
+    tagline: "Authentic South Indian Flavours
+",
     currency: "₹",
-    themePrimary: "#D4AF37", // Luxury Gold
+    themePrimary: "#C69C53
+", // Luxury Gold
     
     // --- CONTACT & LOCATION ---
-    phone: "+91 98765 43210",
-    whatsapp: "919876543210", // No +, no spaces for WhatsApp API
-    email: "reservations@auraluxe.com",
-    address: "123 Heritage Boulevard, Colaba, Mumbai 400001",
-    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.2260580957514!2d72.8259074!3d18.9213568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c73a0d5cad%3A0xc70a25a7209c733c!2sColaba%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    phone: "+91 77758 66066
+",
+    whatsapp: "917775866066
+", // No +, no spaces for WhatsApp API
+    email: "janakcafe1@gmail.com
+",
+    address: "Kayji Palladium, Power House, c-22, circle, Gogol Housing Board, Madgaon, Davorlim, Goa 403601
+",
+    googleMapsEmbed: "https://maps.google.com/maps?q=Kayji+Palladium,+Gogol+Housing+Board,+Madgaon,+Goa&t=&z=15&ie=UTF8&iwloc=&output=embed
+",
     
     // --- HOURS ---
     hours: {
