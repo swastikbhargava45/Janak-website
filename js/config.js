@@ -10,8 +10,8 @@ const Config = {
     whatsapp: "917775866066",
     email: "thejanakcafe@gmail.com",
     address: "Kayji Palladium, Power House, c-22, circle, Gogol Housing Board, Madgaon, Davorlim, Goa 403601",
-    // REAL WORKING MAPS EMBED LINK FOR KAYJI PALLADIUM:
-    googleMapsEmbed: "https://maps.google.com/maps?q=Kayji+Palladium,+Gogol+Housing+Board,+Madgaon,+Goa&t=&z=15&ie=UTF8&iwloc=&output=embed", 
+    // REAL WORKING GOOGLE MAPS EMBED LINK:
+    googleMapsEmbed: "https://www.google.com/maps?q=Kayji+Palladium,Gogol+Housing+Board,Madgaon,Goa&output=embed", 
 
     // --- HOURS ---
     hours: { weekdays: "8:00 AM - 10:00 PM", weekends: "7:30 AM - 11:00 PM" },
@@ -23,14 +23,8 @@ const Config = {
         chef: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1977&auto=format&fit=crop", 
         aboutInterior: "https://i.postimg.cc/ftnVwDn3/interior1.jpg", 
         
-        // Physical Menu Scans
-        menuScans: [
-            "https://i.ibb.co/3W2Kx2y/scan1.jpg", "https://i.ibb.co/k5J06R9/scan2.jpg",
-            "https://i.ibb.co/1n5L5L4/scan3.jpg", "https://i.ibb.co/L51H6L1/scan4.jpg",
-            "https://i.ibb.co/pL31H1L/scan5.jpg", "https://i.ibb.co/N1p51HL/scan6.jpg",
-            "https://i.ibb.co/1Lp51HL/scan7.jpg", "https://i.ibb.co/11p51HL/scan8.jpg",
-            "https://i.ibb.co/p1p51HL/scan9.jpg"
-        ]
+        // I HAVE EMPTIED THIS SO THE UGLY ERROR BOXES DISAPPEAR.
+        menuScans: []
     },
 
     // --- ABOUT PAGE CONTENT ---
@@ -39,13 +33,13 @@ const Config = {
         chefName: "Sonu Chef",
     },
 
-    // --- TEXT MENU ---
+    // --- TEXT MENU WITH FIXED STABLE IMAGES ---
     menu: [
         {
             category: "Breakfast Classics",
             items: [
                 { name: "Soft Idli", description: "Classic steamed rice cakes served with sambar and chutney.", price: "140", image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=1000", tag: "Best Seller" },
-                { name: "Medu Vada", description: "Crispy lentil doughnuts served with coconut chutney.", price: "130", image: "https://images.unsplash.com/photo-1626132646529-500637532537?q=80&w=1000", tag: "" },
+                { name: "Medu Vada", description: "Crispy lentil doughnuts served with coconut chutney.", price: "130", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=1000", tag: "" },
                 { name: "Ghee Podi Idli", description: "Idli tossed in aromatic ghee and podi masala.", price: "140", image: "https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=1000", tag: "Signature Dish" }
             ]
         },
@@ -60,7 +54,7 @@ const Config = {
             category: "Italian Wood-Fired",
             items: [
                 { name: "Margherita Pizza", description: "Authentic Italian crust with San Marzano tomatoes, fresh mozzarella, and basil.", price: "450", image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=1000", tag: "Authentic" },
-                { name: "Creamy Alfredo Pasta", description: "Penne tossed in a rich parmesan cream sauce with garlic and herbs.", price: "380", image: "https://images.unsplash.com/photo-1645112481358-0056157e3cc0?q=80&w=1000", tag: "" }
+                { name: "Creamy Alfredo Pasta", description: "Penne tossed in a rich parmesan cream sauce with garlic and herbs.", price: "380", image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1000", tag: "" }
             ]
         }
     ]
