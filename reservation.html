@@ -3,64 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservations - The Janak Cafe</title>
+    <link rel="icon" type="image/jpg" href="https://i.postimg.cc/pmWJCzq6/logo.jpg">
+    <title>Book Table | The Janak Cafe</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #f5f5f5; }
-        h1, h2, h3, h4, h5, .font-serif { font-family: 'Playfair Display', serif; }
-    </style>
+    <style>body{font-family:'Inter',sans-serif;background-color:#0a0a0a;color:#f5f5f5}h1,h2,h3,h4,h5,.font-serif{font-family:'Playfair Display',serif}</style>
 </head>
 <body class="bg-[#0a0a0a] text-white font-sans overflow-x-hidden w-full antialiased pt-28 md:pt-24">
-
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-neutral-800 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-serif text-[#C69C53] tracking-widest uppercase" data-config="restaurantName">The Janak Cafe</a>
-            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-[#C69C53] focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold text-neutral-300 items-center">
-                <a href="index.html" class="hover:text-[#C69C53] transition-colors">Home</a>
-                <a href="menu.html" class="hover:text-[#C69C53] transition-colors">Menu</a>
-                <a href="about.html" class="hover:text-[#C69C53] transition-colors">About</a>
-                <a href="contact.html" class="hover:text-[#C69C53] transition-colors">Contact</a>
-                <a href="reservation.html" class="text-[#C69C53] font-bold">Book Table</a>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0a] border-b border-neutral-800 pb-4">
-            <div class="flex flex-col text-center space-y-4 pt-4 uppercase tracking-wider font-semibold text-neutral-300">
-                <a href="index.html" class="hover:text-[#C69C53]">Home</a>
-                <a href="menu.html" class="hover:text-[#C69C53]">Menu</a>
-                <a href="about.html" class="hover:text-[#C69C53]">About</a>
-                <a href="contact.html" class="hover:text-[#C69C53]">Contact</a>
-                <a href="reservation.html" class="text-[#C69C53]">Book Table</a>
-            </div>
-        </div>
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"><a href="index.html" class="text-2xl font-serif text-[#C69C53] tracking-widest uppercase" data-config="restaurantName">Logo</a><button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-[#C69C53] focus:outline-none"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button><div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold text-neutral-300 items-center"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="reservation.html" class="text-[#C69C53] font-bold underline decoration-2 offset-4">Book Table</a></div></div>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0a] border-b border-neutral-800 pb-4 text-center flex flex-col space-y-4 pt-4 uppercase tracking-wider font-semibold text-neutral-300"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="reservation.html" class="text-[#C69C53]">Book Table</a></div>
     </nav>
-
-    <main class="pt-12 pb-24 min-h-screen flex items-center justify-center">
-        <div class="max-w-xl w-full mx-auto px-6">
-            <div class="bg-neutral-900 p-10 rounded-2xl shadow-2xl border border-neutral-800">
-                <h1 class="text-4xl font-serif text-[#C69C53] mb-2 text-center">Book a Table</h1>
-                <p class="text-neutral-400 text-center mb-8">Reservations will be confirmed via WhatsApp.</p>
-                <form id="reservation-form" class="space-y-6">
-                    <div><label class="block text-sm text-neutral-400 mb-2">Full Name</label><input type="text" id="res-name" required class="w-full bg-neutral-950 border border-neutral-800 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#C69C53] transition-colors"></div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div><label class="block text-sm text-neutral-400 mb-2">Date</label><input type="date" id="res-date" required class="w-full bg-neutral-950 border border-neutral-800 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#C69C53] transition-colors"></div>
-                        <div><label class="block text-sm text-neutral-400 mb-2">Time</label><input type="time" id="res-time" required class="w-full bg-neutral-950 border border-neutral-800 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#C69C53] transition-colors"></div>
-                    </div>
-                    <div>
-                        <label class="block text-sm text-neutral-400 mb-2">Number of Guests</label>
-                        <select id="res-guests" class="w-full bg-neutral-950 border border-neutral-800 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#C69C53] transition-colors">
-                            <option value="1">1 Person</option><option value="2" selected>2 People</option><option value="3">3 People</option><option value="4">4 People</option><option value="5+">5+ People</option>
-                        </select>
-                    </div>
-                    <div><button type="submit" class="w-full bg-[#C69C53] text-black font-bold uppercase tracking-wider py-4 rounded-sm hover:bg-white transition-colors">Request Table</button></div>
-                </form>
-            </div>
-        </div>
-    </main>
-
+    [span_22](start_span)<main class="min-h-[80vh] flex items-center justify-center py-10 px-6"><div class="bg-neutral-900 p-10 rounded-2xl shadow-2xl border border-neutral-800 max-w-xl w-full"><h1 class="text-4xl font-serif text-[#C69C53] mb-4 text-center">Request Reservation</h1><p class="text-neutral-400 text-center mb-10 text-sm">Confirmation via WhatsApp[span_22](end_span).</p><form id="reservation-form" class="space-y-6"><div><label class="block text-sm mb-2">Name</label><input type="text" id="res-name" required class="w-full bg-neutral-950 border border-neutral-800 rounded px-4 py-3 text-white outline-none focus:border-[#C69C53]"></div><div class="grid grid-cols-2 gap-4"><div><label class="block text-sm mb-2">Date</label><input type="date" id="res-date" required class="w-full bg-neutral-950 border border-neutral-800 rounded px-4 py-3 text-white"></div><div><label class="block text-sm mb-2">Guests</label><select id="res-guests" class="w-full bg-neutral-950 border border-neutral-800 rounded px-4 py-3 text-white"><option value="2">2 People</option><option value="4">4 People</option><option value="6">6+ People</option></select></div></div><button type="submit" class="w-full bg-[#C69C53] text-black font-bold py-4 rounded hover:bg-white transition-all uppercase tracking-widest">Send Request</button></form></div></main>
     <script src="js/config.js"></script><script src="js/main.js"></script>
 </body>
 </html>
